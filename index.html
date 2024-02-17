@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagem dos sonhos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Pacotes</li>
+                <li>Taxas</li>
+                <li>Contato</li>
+            </ul>
+        </nav>
+        <h1>Venha realizar a viagem dos seus sonhos</h1>
+    </header>
+    <section>
+        <h2>Conheça nossos pacotes</h2>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <br><br>
+            <a href="https://www.lipsum.com/">Link</a>
+            <hr>
+        </p>
+        <figure>
+            <img src="img/nossospacotes/maldivas.jpg" alt="Vista aérea de Maldivas"> 
+            <figcaption>Maldivas</figcaption>
+        </figure>
+        <figure>
+            <img src="img/nossospacotes/caribe.jpg" alt="Litoral do Caribe"> 
+            <figcaption>Caribe</figcaption>
+        </figure>
+        <figure>
+            <img src="img/nossospacotes/grecia.jpg" alt="Prédios e litoral da Grécia"> 
+            <figcaption>Grécia</figcaption>
+        </figure>
+        <figure>
+            <img src="img/nossospacotes/suiça.jpg" alt="Casas, lago e montanha na Suíça"> 
+            <figcaption>Suíça</figcaption>
+        </figure>
+    </section>
+    <video controls width="800px">
+        <source src="video/production_id_4328780 (2160p).mp4" type="video/mp4">
+        <source src="video/production_id_4328782 (2160p).mp4" type="video/mp4">
+        Seu navegador não suporta o vídeo? <a href="video/production_id_4328780 (2160p).mp4">Clique aqui para assistir</a>
+    </video>
+    <br><br>
+    <section>
+        <h2> Taxas e Serviços</h2>
+        <p>Veja nossas taxas para serviços.</p>
+        <table border ="0">
+            <caption>Descrição dos serviços e respectivos valores</caption>
+            <thead>
+                <tr>
+                    <th>
+                        Serviços
+                    </th>
+                    <th>
+                        Valor
+                    </th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Reserva de Hotel
+                    </td>
+                    <td>
+                        R$ 150,00
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Compra de Passagens
+                    </td>
+                    <td>
+                        R$ 100,00
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Aluguel de Carros
+                    </td>
+                    <td>
+                        R$ 50,00
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <h2>Orçamento</h2>
+        <form method="GET" action="">
+            <fieldset>
+                <legend>Dados da viagem></legend>
+                <label>Nome</label><br>
+                <input type="Text" required name="Nome"><br><br>
+
+                <label>E-mail</label><br>
+                <input type="email" required name="email"><br><br>
+
+                <label>Data de ida</label><br>
+                <input type="date" required name="dataIda"><br><br>
+
+                <label>Data de volta</label><br>
+                <input type="date" required name="dataVolta"><br><br>
+
+                <label>Quantidade de pessoas</label><br>
+                <input type="number" required name="qtdPessoas"><br><br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Quais serviços você deseja contratar?</legend>
+                <label>
+                    <br><input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+                </label>
+                <label>
+                    <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
+                </label>
+                <label>
+                    <br><input type="checkbox" name="veiculos" value="Veiculo">Reserva de veículos
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha a forma de pagamento</legend>
+                <label>
+                    <br><input type="radio" name="formaPagamento" value="Cartão de Crédito">Cartão de Crédito
+                    <br><input type="radio" name="formaPagamento" value="Boleto"> Boleto
+                    <br><input type="radio" name="formaPagamento" value="Pix"> Pix
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Escolha o prazo para pagamento</legend>
+                <select name="prazoPagamento">
+                    <option selected>Selecione...</option>
+                    <option value="aVista">Á vista</option>
+                    <option value="5x">5x sem juros</option>
+                    <option value="10x">10x com juros</option>
+                </select>
+            </fieldset>
+
+            <label>Comentário</label><br>
+            <textarea rows="5">Comentário</textarea><br><br>
+        
+            <button>Salvar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Desenvolvido por Josueli Barbosa</p>
+    </footer>
+</body>
+</html>

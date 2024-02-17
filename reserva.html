@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMB Trips</title>
+</head>
+<body>
+    <section>
+        <h2>Solicite o seu orçamento</h2>
+        <form method="GET" action="">
+            <fieldset>
+                <legend>Dados básicos:</legend>
+                <label>Nome:</label><br>
+                <input type="Text" required name="Nome" placeholder="Nome completo"><br><br>
+
+                <label>E-mail:</label><br>
+                <input type="email" required name="email" placeholder="E-mail"><br><br>
+
+                <label>Data de ida:</label><br>
+                <input type="date" required name="dataIda"><br><br>
+
+                <label>Data de volta:</label><br>
+                <input type="date" required name="dataVolta"><br><br>
+
+                <label>Quantidade de pessoas:</label><br>
+                <input type="number" required name="qtdPessoas" placeholder="0"><br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Quais serviços você deseja contratar?</legend>
+                <label>
+                    <input type="checkbox" name="passagens" value="Passagens">Compra de passagens
+                </label>
+                <label>
+                    <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem
+                </label>
+                <label>
+                    <br><input type="checkbox" name="veiculos" value="Veiculo">Aluguel de veículos
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Escolha a forma de pagamento:</legend>
+                <label>
+                    <input type="radio" name="formaPagamento" value="Boleto"> Boleto
+                    <br><input type="radio" name="formaPagamento" value="Cartão de Crédito">Cartão de Crédito
+                    <br><input type="radio" name="formaPagamento" value="Pix"> Pix
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Escolha o prazo para pagamento:</legend>
+                <select name="prazoPagamento">
+                    <option value="" disabled selected>Selecione uma das opções...</option>
+                    <option value="aVista">À vista</option>
+                    <option value="5x">5x sem juros</option>
+                    <option value="10x">10x com juros</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label>Comentário:</label><br>
+                <textarea rows="6" placeholder="Informações extras"></textarea>
+            </fieldset>
+            <br>
+            <button>Enviar</button>
+            <button>Limpar</button>
+        </form>
+    </section>
+</body>
+</html>
